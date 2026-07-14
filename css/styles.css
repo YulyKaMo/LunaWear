@@ -52,53 +52,74 @@ body {
 
 /* HEADER */
 
-.header {
-  background-color: #fffaf3;
-  border-bottom: 1px solid #e8ded2;
-  position: sticky;
-  top: 0;
-  z-index: 10;
-}
-
-.header__content {
-  height: 78px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.navbar {
+  min-height: 78px;
 }
 
 .header__logo {
-  color: #1f1f1f;
+  color: #fffaf3;
   font-size: 1.6rem;
   font-weight: 800;
   letter-spacing: -1px;
   text-decoration: none;
+  transition: color 0.3s ease;
 }
 
 .header__logo-accent {
   color: #b77b57;
 }
 
-.header__nav {
-  display: flex;
-  align-items: center;
-  gap: 28px;
-}
-
 .header__link {
-  color: #333333;
+  position: relative;
+  margin-left: 14px;
+  padding-right: 10px !important;
+  padding-left: 10px !important;
+  color: #e8ded2;
   font-size: 0.95rem;
   font-weight: 600;
   text-decoration: none;
-  transition: 0.3s ease;
+  transition:
+    color 0.3s ease,
+    transform 0.3s ease;
 }
 
-.header__link:hover {
+.header__link:hover,
+.header__link:focus {
   color: #b77b57;
+  transform: translateY(-1px);
 }
 
 .header__link--active {
   color: #b77b57;
+}
+
+.navbar-toggler {
+  border-color: rgba(255, 250, 243, 0.45);
+}
+
+.navbar-toggler:focus {
+  box-shadow: 0 0 0 4px rgba(183, 123, 87, 0.25);
+}
+
+.header__toggler {
+  padding: 9px 11px;
+  border: 1px solid rgba(255, 250, 243, 0.25);
+  border-radius: 12px;
+  background-color: rgba(255, 255, 255, 0.05);
+  transition:
+    border-color 0.3s ease,
+    background-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.header__toggler:hover {
+  border-color: #b77b57;
+  background-color: rgba(183, 123, 87, 0.15);
+}
+
+.header__toggler:focus {
+  border-color: #b77b57;
+  box-shadow: 0 0 0 4px rgba(183, 123, 87, 0.2);
 }
 
 /* HERO */
@@ -827,5 +848,29 @@ body {
   .footer__legal-link::after {
     left: 0;
     width: 100%;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .navbar-collapse {
+    padding-top: 18px;
+    padding-bottom: 12px;
+  }
+
+  .header__link {
+    margin-left: 0;
+    padding: 12px 0 !important;
+  }
+
+  .header__link:hover,
+  .header__link:focus {
+    transform: none;
+  }
+
+  .header__link--active::after {
+    right: auto;
+    bottom: 7px;
+    left: 0;
+    width: 36px;
   }
 }
