@@ -1,13 +1,12 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Luna Wear | Tienda de Ropa</title>
-  <link rel="stylesheet" href="css/styles.css" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" />
-
+  <link rel="stylesheet" href="css/styles.css" />
 </head>
 
 <body>
@@ -26,15 +25,21 @@
         <div class="collapse navbar-collapse" id="navbarLunaWear">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a href="index.html" class="nav-link header__link header__link--active" aria-current="page"> Inicio </a>
+              <a href="index.html" class="nav-link header__link header__link--active" aria-current="page">
+                Inicio
+              </a>
             </li>
 
             <li class="nav-item">
-              <a href="#productos" class="nav-link header__link"> Productos </a>
+              <a href="#productos" class="nav-link header__link">
+                Productos
+              </a>
             </li>
 
             <li class="nav-item">
-              <a href="contact.html" class="nav-link header__link"> Contacto </a>
+              <a href="contact.html" class="nav-link header__link">
+                Contacto
+              </a>
             </li>
           </ul>
         </div>
@@ -43,11 +48,8 @@
   </header>
 
   <main>
-
     <section class="hero">
-
       <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
-
         <!-- Indicadores -->
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true"
@@ -66,9 +68,14 @@
             <div class="container hero__content">
               <div class="hero__text">
                 <span class="hero__label"> Nueva colección </span>
-                <h1 class="hero__title"> Moda elegante para todos los días </h1>
-                <p class="hero__description"> Descubre prendas modernas, cómodas y versátiles diseñadas para acompañarte en cada momento. </p>
-                <a href="#productos" class="button button--light"> Ver productos </a>
+                <h1 class="hero__title">Moda elegante para todos los días</h1>
+                <p class="hero__description">
+                  Descubre prendas modernas, cómodas y versátiles diseñadas
+                  para acompañarte en cada momento.
+                </p>
+                <a href="#productos" class="button button--light">
+                  Ver productos
+                </a>
               </div>
             </div>
           </div>
@@ -81,9 +88,14 @@
             <div class="container hero__content">
               <div class="hero__text">
                 <span class="hero__label"> Estilo urbano </span>
-                <h2 class="hero__title"> Diseña un estilo que hable de ti </h2>
-                <p class="hero__description"> Combina prendas modernas, minimalistas y funcionales para crear looks únicos.</p>
-                <a href="#productos" class="button button--light"> Explorar colección </a>
+                <h2 class="hero__title">Diseña un estilo que hable de ti</h2>
+                <p class="hero__description">
+                  Combina prendas modernas, minimalistas y funcionales para
+                  crear looks únicos.
+                </p>
+                <a href="#productos" class="button button--light">
+                  Explorar colección
+                </a>
               </div>
             </div>
           </div>
@@ -96,9 +108,14 @@
             <div class="container hero__content">
               <div class="hero__text">
                 <span class="hero__label"> Oferta especial </span>
-                <h2 class="hero__title"> Hasta 30% de descuento </h2>
-                <p class="hero__description"> Renueva tu armario con prendas elegantes y atemporales seleccionadas de nuestra nueva temporada. </p>
-                <a href="#productos" class="button button--light"> Comprar ahora </a>
+                <h2 class="hero__title">Hasta 30% de descuento</h2>
+                <p class="hero__description">
+                  Renueva tu armario con prendas elegantes y atemporales
+                  seleccionadas de nuestra nueva temporada.
+                </p>
+                <a href="#productos" class="button button--light">
+                  Comprar ahora
+                </a>
               </div>
             </div>
           </div>
@@ -108,7 +125,6 @@
 
     <section class="categories">
       <div class="container">
-
         <div class="section-heading">
           <h2 class="section-heading__title">Nueva colección</h2>
           <p class="section-heading__description">
@@ -123,85 +139,198 @@
           <span class="categories__item">Chaquetas</span>
           <span class="categories__item">Accesorios</span>
         </div>
-
       </div>
     </section>
 
     <section class="products" id="productos">
-      <div class="container products__grid">
+      <div class="container">
+        <div class="row">
+          <!-- PRODUCTO 1 -->
+          <div class="col-12 col-md-6 col-lg-4 mb-4">
+            <article class="card product-card">
+              <div class="card-img-top product-card__image product-card__image--coat" tabindex="0">
+                <span class="badge product-card__badge"> Premium </span>
+              </div>
 
-        <article class="product-card">
-          <div class="product-card__image product-card__image--coat">
-            <span class="product-card__badge">Premium</span>
+              <div class="card-body product-card__content">
+                <!-- Contenido oculto inicialmente -->
+                <div class="product-card__details">
+                  <h3 class="card-title product-card__title">Abrigo Camel</h3>
+
+                  <p class="card-text product-card__description">
+                    Abrigo elegante para temporada fría con acabado
+                    sofisticado.
+                  </p>
+                </div>
+
+                <div class="product-card__footer">
+                  <div class="product-card__price-box">
+                    <span class="product-card__price"> €89.90 </span>
+                  </div>
+
+                  <button type="button" class="btn product-card__button">
+                    Comprar
+                  </button>
+                </div>
+              </div>
+            </article>
           </div>
 
-          <div class="product-card__content">
-            <h3 class="product-card__title">Abrigo Camel</h3>
-            <p class="product-card__description">
-              Abrigo elegante para temporada fría con acabado sofisticado.
-            </p>
+          <!-- PRODUCTO 2 -->
+          <div class="col-12 col-md-6 col-lg-4 mb-4">
+            <article class="card product-card">
+              <div class="card-img-top product-card__image product-card__image--tshirt" tabindex="0">
+                <span class="badge product-card__badge"> Básico </span>
+              </div>
 
-            <div class="product-card__footer">
-              <span class="product-card__price">€89.90</span>
-              <button class="product-card__button">Comprar</button>
-            </div>
-          </div>
-        </article>
+              <div class="card-body product-card__content">
+                <div class="product-card__details">
+                  <h3 class="card-title product-card__title">
+                    Camiseta Essential
+                  </h3>
 
-        <article class="product-card">
-          <div class="product-card__image product-card__image--tshirt">
-            <span class="product-card__badge">Básico</span>
-          </div>
+                  <p class="card-text product-card__description">
+                    Camiseta cómoda de algodón para combinar con cualquier
+                    outfit.
+                  </p>
+                </div>
 
-          <div class="product-card__content">
-            <h3 class="product-card__title">Camiseta Essential</h3>
-            <p class="product-card__description">
-              Camiseta cómoda de algodón para combinar con cualquier outfit.
-            </p>
+                <div class="product-card__footer">
+                  <div class="product-card__price-box">
+                    <span class="product-card__price"> €19.90 </span>
+                  </div>
 
-            <div class="product-card__footer">
-              <span class="product-card__price">€19.90</span>
-              <button class="product-card__button">Comprar</button>
-            </div>
-          </div>
-        </article>
-
-        <article class="product-card">
-          <div class="product-card__image product-card__image--blazer">
-            <span class="product-card__badge">Elegante</span>
+                  <button type="button" class="btn product-card__button">
+                    Comprar
+                  </button>
+                </div>
+              </div>
+            </article>
           </div>
 
-          <div class="product-card__content">
-            <h3 class="product-card__title">Blazer Negro</h3>
-            <p class="product-card__description">
-              Blazer estructurado para looks profesionales y modernos.
-            </p>
+          <!-- PRODUCTO 3 -->
+          <div class="col-12 col-md-6 col-lg-4 mb-4">
+            <article class="card product-card">
+              <div class="card-img-top product-card__image product-card__image--blazer" tabindex="0">
+                <span class="badge product-card__badge"> Elegante </span>
+              </div>
 
-            <div class="product-card__footer">
-              <span class="product-card__price">€74.90</span>
-              <button class="product-card__button">Comprar</button>
-            </div>
+              <div class="card-body product-card__content">
+                <div class="product-card__details">
+                  <h3 class="card-title product-card__title">Blazer Negro</h3>
+
+                  <p class="card-text product-card__description">
+                    Blazer estructurado para looks profesionales y modernos.
+                  </p>
+                </div>
+
+                <div class="product-card__footer">
+                  <div class="product-card__price-box">
+                    <span class="product-card__price"> €74.90 </span>
+                  </div>
+
+                  <button type="button" class="btn product-card__button">
+                    Comprar
+                  </button>
+                </div>
+              </div>
+            </article>
           </div>
-        </article>
 
-        <article class="product-card">
-          <div class="product-card__image product-card__image--bag">
-            <span class="product-card__badge">Accesorio</span>
+          <!-- PRODUCTO 4 -->
+          <div class="col-12 col-md-6 col-lg-4 mb-4">
+            <article class="card product-card">
+              <div class="card-img-top product-card__image product-card__image--bag" tabindex="0">
+                <span class="badge product-card__badge"> Accesorio </span>
+              </div>
+
+              <div class="card-body product-card__content">
+                <div class="product-card__details">
+                  <h3 class="card-title product-card__title">
+                    Bolso Minimalista
+                  </h3>
+
+                  <p class="card-text product-card__description">
+                    Bolso elegante y funcional para complementar cualquier
+                    outfit.
+                  </p>
+                </div>
+
+                <div class="product-card__footer">
+                  <div class="product-card__price-box">
+                    <span class="product-card__price"> €39.90 </span>
+                  </div>
+
+                  <button type="button" class="btn product-card__button">
+                    Comprar
+                  </button>
+                </div>
+              </div>
+            </article>
           </div>
 
-          <div class="product-card__content">
-            <h3 class="product-card__title">Bolso Minimalista</h3>
-            <p class="product-card__description">
-              Bolso elegante y funcional para complementar cualquier outfit.
-            </p>
+          <!-- PRODUCTO 5 -->
+          <div class="col-12 col-md-6 col-lg-4 mb-4">
+            <article class="card product-card">
+              <div class="card-img-top product-card__image product-card__image--jeans" tabindex="0">
+                <span class="badge product-card__badge"> Nuevo </span>
+              </div>
 
-            <div class="product-card__footer">
-              <span class="product-card__price">€39.90</span>
-              <button class="product-card__button">Comprar</button>
-            </div>
+              <div class="card-body product-card__content">
+                <div class="product-card__details">
+                  <h3 class="card-title product-card__title">Jeans Urban</h3>
+
+                  <p class="card-text product-card__description">
+                    Jeans de corte moderno y tejido resistente para un estilo
+                    urbano.
+                  </p>
+                </div>
+
+                <div class="product-card__footer">
+                  <div class="product-card__price-box">
+                    <span class="product-card__price"> €49.90 </span>
+                  </div>
+
+                  <button type="button" class="btn product-card__button">
+                    Comprar
+                  </button>
+                </div>
+              </div>
+            </article>
           </div>
-        </article>
 
+          <!-- PRODUCTO 6 -->
+          <div class="col-12 col-md-6 col-lg-4 mb-4">
+            <article class="card product-card">
+              <div class="card-img-top product-card__image product-card__image--shoes" tabindex="0">
+                <span class="badge product-card__badge"> Tendencia </span>
+              </div>
+
+              <div class="card-body product-card__content">
+                <div class="product-card__details">
+                  <h3 class="card-title product-card__title">
+                    Sneakers White
+                  </h3>
+
+                  <p class="card-text product-card__description">
+                    Zapatillas cómodas y versátiles para completar tus looks
+                    casuales.
+                  </p>
+                </div>
+
+                <div class="product-card__footer">
+                  <div class="product-card__price-box">
+                    <span class="product-card__price"> €59.90 </span>
+                  </div>
+
+                  <button type="button" class="btn product-card__button">
+                    Comprar
+                  </button>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -215,12 +344,83 @@
           Renueva tu armario con prendas modernas, cómodas y atemporales.
         </p>
 
-        <a href="#productos" class="button button--light">
-          Comprar ahora
-        </a>
+        <a href="#productos" class="button button--light"> Comprar ahora </a>
       </div>
     </section>
 
+    <section class="faq" id="preguntas">
+      <div class="container">
+        <!-- Encabezado de la sección -->
+        <div class="faq__heading text-center">
+          <span class="faq__eyebrow"> Información útil </span>
+
+          <h2 class="faq__title">Preguntas frecuentes</h2>
+
+          <p class="faq__description">
+            Resolvemos las dudas más habituales sobre nuestros productos,
+            pedidos, cambios y formas de pago.
+          </p>
+        </div>
+
+        <!-- Acordeón Bootstrap -->
+        <div class="accordion faq__accordion" id="faqAccordion">
+          <div class="accordion-item faq__item">
+            <h3 class="accordion-header" id="faqHeadingOne">
+              <button class="accordion-button faq__button" type="button" data-bs-toggle="collapse"
+                data-bs-target="#faqCollapseOne" aria-expanded="true" aria-controls="faqCollapseOne">
+                ¿Cuánto tarda en llegar mi pedido?
+              </button>
+            </h3>
+
+            <div id="faqCollapseOne" class="accordion-collapse collapse show" aria-labelledby="faqHeadingOne"
+              data-bs-parent="#faqAccordion">
+              <div class="accordion-body faq__body">
+                Los pedidos se entregan normalmente entre tres y cinco días
+                laborables. El plazo puede variar dependiendo de la ciudad, la
+                disponibilidad del producto y la empresa de transporte.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item faq__item">
+            <h3 class="accordion-header" id="faqHeadingTwo">
+              <button class="accordion-button collapsed faq__button" type="button" data-bs-toggle="collapse"
+                data-bs-target="#faqCollapseTwo" aria-expanded="false" aria-controls="faqCollapseTwo">
+                ¿Puedo cambiar o devolver una prenda?
+              </button>
+            </h3>
+
+            <div id="faqCollapseTwo" class="accordion-collapse collapse" aria-labelledby="faqHeadingTwo"
+              data-bs-parent="#faqAccordion">
+              <div class="accordion-body faq__body">
+                Sí. Puedes solicitar un cambio o devolución dentro de los
+                primeros catorce días posteriores a la recepción del pedido.
+                La prenda debe conservar sus etiquetas y estar en perfecto
+                estado.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item faq__item">
+            <h3 class="accordion-header" id="faqHeadingThree">
+              <button class="accordion-button collapsed faq__button" type="button" data-bs-toggle="collapse"
+                data-bs-target="#faqCollapseThree" aria-expanded="false" aria-controls="faqCollapseThree">
+                ¿Qué métodos de pago están disponibles?
+              </button>
+            </h3>
+
+            <div id="faqCollapseThree" class="accordion-collapse collapse" aria-labelledby="faqHeadingThree"
+              data-bs-parent="#faqAccordion">
+              <div class="accordion-body faq__body">
+                Puedes pagar mediante tarjeta de crédito o débito,
+                transferencia bancaria y los demás métodos disponibles en
+                nuestra plataforma de pago segura.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 
   <footer class="footer__bottom">
@@ -238,8 +438,6 @@
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-
-
 </body>
 
 </html>
