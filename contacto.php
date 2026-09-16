@@ -1,3 +1,6 @@
+<?php
+$activePage = 'contacto';
+?>
 <!DOCTYPE html>
 <html lang="es">
 
@@ -7,41 +10,11 @@
   <title>Contacto | Luna Wear</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="css/styles.css" />
-  <script src="main.js" defer></script>
-
+  <script src="js/main.js" defer></script>
 </head>
 
 <body>
-  <header class="sticky-top">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm" data-bs-theme="dark">
-      <div class="container">
-        <a href="index.html" class="navbar-brand header__logo">
-          Luna<span class="header__logo-accent">Wear</span>
-        </a>
-
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarLunaWear"
-          aria-controls="navbarLunaWear" aria-expanded="false" aria-label="Abrir menú de navegación">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarLunaWear">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a href="index.html" class="nav-link header__link" aria-current="page"> Inicio </a>
-            </li>
-
-            <li class="nav-item">
-              <a href="index.html#productos" class="nav-link header__link"> Productos </a>
-            </li>
-
-            <li class="nav-item">
-              <a href="contact.html" class="nav-link header__link  header__link--active"> Contacto </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </header>
+  <?php include __DIR__ . '/includes/header.php'; ?>
 
   <main class="contact-page">
 
@@ -148,7 +121,7 @@
             Déjanos tus datos y cuéntanos cómo podemos ayudarte.
           </p>
 
-          <form class="contact-form" method="post">
+          <form class="contact-form" method="post" onsubmit="event.preventDefault(); alert('¡Gracias por tu mensaje! Nos pondremos en contacto contigo pronto.'); this.reset();">
 
             <div class="contact-form__row">
               <div class="contact-form__group">
@@ -188,21 +161,10 @@
 
   </main>
 
-  <footer class="footer__bottom">
-    <div class="container footer__bottom-content">
-      <p class="footer__copyright">
-        © 2026 LunaWear. Todos los derechos reservados.
-      </p>
+  <?php include __DIR__ . '/includes/footer.php'; ?>
 
-      <div class="footer__legal">
-        <a href="#" class="footer__legal-link">Política de privacidad</a>
-        <a href="#" class="footer__legal-link">Términos y condiciones</a>
-        <a href="#" class="footer__legal-link">Cookies</a>
-      </div>
-    </div>
-  </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/carrito.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,14 @@
+# Configuración para Apache / XAMPP
+DirectoryIndex index.html index.php
+
+# Permitir ejecución de PHP en archivos .html si se requiere en Apache
+<IfModule mod_mime.c>
+    AddType application/x-httpd-php .html .htm .php
+</IfModule>
+
+# Habilitar CORS para peticiones locales de la API
+<IfModule mod_headers.c>
+    Header set Access-Control-Allow-Origin "*"
+    Header set Access-Control-Allow-Methods "GET, POST, OPTIONS"
+    Header set Access-Control-Allow-Headers "Content-Type"
+</IfModule>
